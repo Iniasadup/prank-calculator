@@ -1,0 +1,152 @@
+body{
+      margin: 0;
+}
+*{
+      box-sizing: border-box;
+}
+
+.wrapper{
+      background: linear-gradient(180deg,
+      rgba(58, 253, 5, 0.3) 0%,
+      rgba(103, 194, 12, 0.3) 100%
+      );
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+}
+
+.calculator{
+      background: rgba(200, 180, 27, 0.714);
+      backdrop-filter: blur 20px; 
+      /* note: backdrop-filter has minimal browser support */
+      border-radius: 10px;
+      width: 400px;
+      padding: 2rem 1.5rem;
+
+/* grid  */
+display: grid;
+gap: 5px;
+grid-template-areas: "display display display display"
+"ac c perc divide"
+"btn7 btn8 btn9 multi"
+"btn4 btn5 btn6 sub"
+"btn1 btn2 btn3 plus"
+"btn0 btn0 dot ans";
+
+}
+
+.calculator div{
+      background: rgba(104, 94, 94, 0.352);
+      
+      height: 70px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(-12px 12px 14px rgba(86, 74, 74, 0.919));
+      border-radius: 5px;
+}
+.calculator .display{
+      grid-area: display;
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+      font-family: 'Orbitron', sans-serif;
+      background: white;
+      border-radius: 5px;
+
+}
+
+.btn-ac{
+      grid-area: ac;
+}
+
+.btn-ac{
+      grid-area: ac;
+}
+
+.btn-c{
+      grid-area: c;
+}
+
+.btn-perc{
+      grid-area: perc;
+
+}
+
+.btn-divide{
+      grid-area: divide;
+}
+
+.btn-7{
+      grid-area: btn7;
+}
+
+.btn-8{
+      grid-area: btn8;
+}
+
+.btn-9{
+      grid-area: btn9;
+}
+
+.btn-multi{
+      grid-area: multi;
+}
+
+.btn-4{
+      grid-area: btn4;
+}
+
+.btn-5{
+      grid-area: btn5;
+}
+
+.btn-6{
+      grid-area: btn6;
+}
+
+.btn-sub{
+      grid-area: sub;
+}
+
+.btn-1{
+      grid-area: btn1;
+}
+
+.btn-2{
+      grid-area: btn2;
+}
+
+.btn-3{
+      grid-area: btn3;
+}
+
+.btn-plus{
+      grid-area: plus;
+}
+
+.btn-0{
+      grid-area: btn0;
+}
+
+.btn-dot{
+      grid-area: dot;
+}
+
+.btn-equal{
+      grid-area: equal;
+}
+
+.circle{
+      background:linear-gradient(to right, blue, purple);
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      position: relative;
+
+      left: 60px;
+      top: 230px;
+
+}
